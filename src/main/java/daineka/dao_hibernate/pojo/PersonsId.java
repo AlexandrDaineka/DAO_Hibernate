@@ -1,4 +1,4 @@
-package daineka.dao_hibernate;
+package daineka.dao_hibernate.pojo;
 
 import java.io.Serializable;
 import java.util.Objects;

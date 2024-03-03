@@ -4,13 +4,12 @@ import daineka.dao_hibernate.entity.Persons;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repository
+@org.springframework.stereotype.Repository
 @RequiredArgsConstructor
-public class RepositoryClass {
+public class Repository {
 
     @PersistenceContext
     private EntityManager entityManager;

@@ -1,5 +1,6 @@
-package daineka.dao_hibernate;
+package daineka.dao_hibernate.entity;
 
+import daineka.dao_hibernate.pojo.PersonsId;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -19,8 +20,8 @@ public class Persons {
 
     @Id
     private int age;
-
-    private String cityOfLiving;
+    @Column(name = "city_of_living", length = 50)
+    private String city_of_living;
 
     @Column(name = "phone_number", length = 10)
     private int phoneNumber;

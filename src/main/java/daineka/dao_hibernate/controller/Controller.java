@@ -1,7 +1,7 @@
-package daineka.dao_hibernate;
+package daineka.dao_hibernate.controller;
 
 import daineka.dao_hibernate.entity.Persons;
-import daineka.dao_hibernate.repository.RepositoryClass;
+import daineka.dao_hibernate.repository.Repository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,8 +13,8 @@ import java.util.List;
 @RestController
 @RequestMapping("/persons")
 @RequiredArgsConstructor
-public class ControllerClass {
-    private final RepositoryClass repository;
+public class Controller {
+    private final Repository repository;
 
     @GetMapping("/by-city")
     public List<Persons> getListPersonByCity(@RequestParam String cityOfLiving) {
