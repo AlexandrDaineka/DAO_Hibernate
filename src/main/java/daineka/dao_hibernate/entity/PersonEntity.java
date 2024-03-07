@@ -27,8 +27,8 @@ public class PersonEntity {
     private int age;
 
     @Column(name = "city_of_living", length = 50)
-    private String city_of_living;
+    private String cityOfLiving;
 
     @Column(name = "phone_number", length = 10)
-    private int phone_number;
+    private int phoneNumber;
 }
